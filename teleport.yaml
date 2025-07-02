@@ -1,0 +1,17 @@
+teleport:
+  nodename: teleport-server
+  data_dir: /var/lib/teleport
+  log:
+    output: stderr
+    severity: INFO
+
+auth_service:
+  enabled: true
+
+ssh_service:
+  enabled: true
+
+proxy_service:
+  enabled: true
+  web_listen_addr: :3080
+  ssh_listen_addr: :3023
